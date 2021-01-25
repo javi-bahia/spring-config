@@ -5,13 +5,16 @@
 #    name: eureka-server
 # NON vale a barra baixa... NON funcionaría con eureka_server
 
-server:  port: 8761
+server:
+  port: 8761
   
-eureka:  client:    register-with-eureka: false
+eureka:
+  client:
+    register-with-eureka: false
     fetch-registry: false
     service-url: 
-      default-zone: http://localhost:8761/eureka
-      
-  server:    wait-time-in-ms-when-sync-empty: 0
+    default-zone: http://localhost:8761/eureka
+  server:
+    wait-time-in-ms-when-sync-empty: 0
     
     
