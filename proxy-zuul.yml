@@ -1,1 +1,22 @@
+server:
+  port: 7000
 
+# CONF PARA EUREKA
+spring:
+  application:
+    name: proxy-zuul
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 5
+  client:
+    service-url:
+      defautlZone: http://localhost:8761/eureka
+
+# CONF ZUUL
+zuul:
+  ignored-services: '*'
+  routes:
+    servicio-cursos:
+      path: /escuela/**
+      service-id: servicio-cursos
