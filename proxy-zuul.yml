@@ -18,5 +18,5 @@ zuul:
   ignored-services: '*'
   routes:
     servicio-cursos:
-      path: /escuela/**
+      path: /escuela/cursos/**
       service-id: servicio-cursos
