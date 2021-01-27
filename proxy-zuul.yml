@@ -20,3 +20,6 @@ zuul:
     servicio-cursos:
       path: /servcursos/**
       serviceId: servicio-cursos
+    servicio-empleados:
+      path: /servempleados/**
+      serviceId: servicio-empleados
