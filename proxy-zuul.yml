@@ -15,8 +15,8 @@ eureka:
 
 # CONF ZUUL
 zuul:
-  ignored-services: '*'
+  ignoredServices: '*'
   routes:
     servicio-cursos:
-      path: /escuela/cursos
-      service-id: servicio-cursos
+      path: /servcursos/**
+      serviceId: servicio-cursos
